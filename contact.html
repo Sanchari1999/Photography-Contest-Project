@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us - Photography Contest</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Photography Contest</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Submit Photo</a></li>
+				<li><a href="#">Vote</a></li>
+				<li><a href="#">Winners</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Contact Us</h2>
+			<p>Please use the form below to send us a message.</p>
+			<form action="send-message.php" method="POST">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<button type="submit">Send</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Photography Contest. All rights reserved.</p>
+	</footer>
+</body>
+</html>
