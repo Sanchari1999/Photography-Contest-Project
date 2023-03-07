@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Submit Your Photo - Photography Contest</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Photography Contest</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Submit Photo</a></li>
+				<li><a href="#">Vote</a></li>
+				<li><a href="#">Winners</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Submit Your Photo</h2>
+			<p>Please fill in the form below to submit your photo for the contest. Make sure to read the rules and guidelines before submitting.</p>
+			<form action="upload-photo.php" method="POST" enctype="multipart/form-data">
+				<label for="title">Photo Title:</label>
+				<input type="text" id="title" name="title" required>
+
+				<label for="description">Photo Description:</label>
+				<textarea id="description" name="description" required></textarea>
+
+				<label for="photo">Upload Your Photo:</label>
+				<input type="file" id="photo" name="photo" accept="image/*" required>
+
+				<button type="submit">Submit</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Photography Contest. All rights reserved.</p>
+	</footer>
+</body>
+</html>
